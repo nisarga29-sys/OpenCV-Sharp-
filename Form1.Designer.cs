@@ -140,6 +140,32 @@
             this.cbConnectedComponents = new System.Windows.Forms.CheckBox();
             this.tabPage2 = new System.Windows.Forms.TabPage();
             this.cbMinEnclosing = new System.Windows.Forms.CheckBox();
+            this.numGain = new System.Windows.Forms.NumericUpDown();
+            this.numGrayscale = new System.Windows.Forms.NumericUpDown();
+            this.numLAB = new System.Windows.Forms.NumericUpDown();
+            this.numClahe = new System.Windows.Forms.NumericUpDown();
+            this.numHistogram = new System.Windows.Forms.NumericUpDown();
+            this.numGaussian = new System.Windows.Forms.NumericUpDown();
+            this.numBilateral = new System.Windows.Forms.NumericUpDown();
+            this.numMedian = new System.Windows.Forms.NumericUpDown();
+            this.numThreshold = new System.Windows.Forms.NumericUpDown();
+            this.numTriangleThreshold = new System.Windows.Forms.NumericUpDown();
+            this.numToZero = new System.Windows.Forms.NumericUpDown();
+            this.numTruncate = new System.Windows.Forms.NumericUpDown();
+            this.numThresholdAdaptive = new System.Windows.Forms.NumericUpDown();
+            this.numThresholdOtsu = new System.Windows.Forms.NumericUpDown();
+            this.numGradient = new System.Windows.Forms.NumericUpDown();
+            this.numBlackHat = new System.Windows.Forms.NumericUpDown();
+            this.numHitMiss = new System.Windows.Forms.NumericUpDown();
+            this.numDilate = new System.Windows.Forms.NumericUpDown();
+            this.numErode = new System.Windows.Forms.NumericUpDown();
+            this.numClose = new System.Windows.Forms.NumericUpDown();
+            this.numOpen = new System.Windows.Forms.NumericUpDown();
+            this.numTopHat = new System.Windows.Forms.NumericUpDown();
+            this.numSobel = new System.Windows.Forms.NumericUpDown();
+            this.numScharr = new System.Windows.Forms.NumericUpDown();
+            this.numLaplacian = new System.Windows.Forms.NumericUpDown();
+            this.numCanny = new System.Windows.Forms.NumericUpDown();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logo)).BeginInit();
@@ -161,6 +187,32 @@
             this.tpHoughCircle.SuspendLayout();
             this.tabPage1.SuspendLayout();
             this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numGain)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numGrayscale)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLAB)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numClahe)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHistogram)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numGaussian)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBilateral)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMedian)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numThreshold)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTriangleThreshold)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numToZero)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTruncate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numThresholdAdaptive)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numThresholdOtsu)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numGradient)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBlackHat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHitMiss)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDilate)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numErode)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numClose)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numOpen)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTopHat)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSobel)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numScharr)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLaplacian)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCanny)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
@@ -566,7 +618,7 @@
             // cbErode
             // 
             this.cbErode.AutoSize = true;
-            this.cbErode.Location = new System.Drawing.Point(39, 319);
+            this.cbErode.Location = new System.Drawing.Point(39, 330);
             this.cbErode.Name = "cbErode";
             this.cbErode.Size = new System.Drawing.Size(74, 25);
             this.cbErode.TabIndex = 43;
@@ -577,7 +629,7 @@
             // cbOpen
             // 
             this.cbOpen.AutoSize = true;
-            this.cbOpen.Location = new System.Drawing.Point(220, 39);
+            this.cbOpen.Location = new System.Drawing.Point(408, 39);
             this.cbOpen.Name = "cbOpen";
             this.cbOpen.Size = new System.Drawing.Size(70, 25);
             this.cbOpen.TabIndex = 42;
@@ -588,7 +640,7 @@
             // cbClose
             // 
             this.cbClose.AutoSize = true;
-            this.cbClose.Location = new System.Drawing.Point(218, 95);
+            this.cbClose.Location = new System.Drawing.Point(406, 99);
             this.cbClose.Name = "cbClose";
             this.cbClose.Size = new System.Drawing.Size(72, 25);
             this.cbClose.TabIndex = 41;
@@ -632,7 +684,7 @@
             // cbDilate
             // 
             this.cbDilate.AutoSize = true;
-            this.cbDilate.Location = new System.Drawing.Point(39, 263);
+            this.cbDilate.Location = new System.Drawing.Point(39, 272);
             this.cbDilate.Name = "cbDilate";
             this.cbDilate.Size = new System.Drawing.Size(71, 25);
             this.cbDilate.TabIndex = 37;
@@ -759,6 +811,10 @@
             // tpEdgeDetection
             // 
             this.tpEdgeDetection.BackColor = System.Drawing.Color.DarkGray;
+            this.tpEdgeDetection.Controls.Add(this.numCanny);
+            this.tpEdgeDetection.Controls.Add(this.numLaplacian);
+            this.tpEdgeDetection.Controls.Add(this.numScharr);
+            this.tpEdgeDetection.Controls.Add(this.numSobel);
             this.tpEdgeDetection.Controls.Add(this.cbScharr);
             this.tpEdgeDetection.Controls.Add(this.cbsobel);
             this.tpEdgeDetection.Controls.Add(this.cbcanny);
@@ -784,6 +840,14 @@
             // tpMorphologicalOperation
             // 
             this.tpMorphologicalOperation.BackColor = System.Drawing.Color.DarkGray;
+            this.tpMorphologicalOperation.Controls.Add(this.numTopHat);
+            this.tpMorphologicalOperation.Controls.Add(this.numOpen);
+            this.tpMorphologicalOperation.Controls.Add(this.numClose);
+            this.tpMorphologicalOperation.Controls.Add(this.numErode);
+            this.tpMorphologicalOperation.Controls.Add(this.numDilate);
+            this.tpMorphologicalOperation.Controls.Add(this.numHitMiss);
+            this.tpMorphologicalOperation.Controls.Add(this.numBlackHat);
+            this.tpMorphologicalOperation.Controls.Add(this.numGradient);
             this.tpMorphologicalOperation.Controls.Add(this.cbTopHat);
             this.tpMorphologicalOperation.Controls.Add(this.cbBlackHat);
             this.tpMorphologicalOperation.Controls.Add(this.cbHitorMiss);
@@ -827,7 +891,7 @@
             // cbHitorMiss
             // 
             this.cbHitorMiss.AutoSize = true;
-            this.cbHitorMiss.Location = new System.Drawing.Point(39, 207);
+            this.cbHitorMiss.Location = new System.Drawing.Point(39, 211);
             this.cbHitorMiss.Name = "cbHitorMiss";
             this.cbHitorMiss.Size = new System.Drawing.Size(115, 25);
             this.cbHitorMiss.TabIndex = 45;
@@ -849,6 +913,12 @@
             // tpThreshold
             // 
             this.tpThreshold.BackColor = System.Drawing.Color.DarkGray;
+            this.tpThreshold.Controls.Add(this.numThresholdOtsu);
+            this.tpThreshold.Controls.Add(this.numThresholdAdaptive);
+            this.tpThreshold.Controls.Add(this.numTruncate);
+            this.tpThreshold.Controls.Add(this.numToZero);
+            this.tpThreshold.Controls.Add(this.numTriangleThreshold);
+            this.tpThreshold.Controls.Add(this.numThreshold);
             this.tpThreshold.Controls.Add(this.cbThresholdOtsu);
             this.tpThreshold.Controls.Add(this.cbThresholdAdaptive);
             this.tpThreshold.Controls.Add(this.cbTriangle);
@@ -865,7 +935,7 @@
             // cbThresholdOtsu
             // 
             this.cbThresholdOtsu.AutoSize = true;
-            this.cbThresholdOtsu.Location = new System.Drawing.Point(26, 81);
+            this.cbThresholdOtsu.Location = new System.Drawing.Point(26, 92);
             this.cbThresholdOtsu.Name = "cbThresholdOtsu";
             this.cbThresholdOtsu.Size = new System.Drawing.Size(146, 25);
             this.cbThresholdOtsu.TabIndex = 39;
@@ -876,7 +946,7 @@
             // cbThresholdAdaptive
             // 
             this.cbThresholdAdaptive.AutoSize = true;
-            this.cbThresholdAdaptive.Location = new System.Drawing.Point(26, 128);
+            this.cbThresholdAdaptive.Location = new System.Drawing.Point(26, 148);
             this.cbThresholdAdaptive.Name = "cbThresholdAdaptive";
             this.cbThresholdAdaptive.Size = new System.Drawing.Size(176, 25);
             this.cbThresholdAdaptive.TabIndex = 38;
@@ -887,7 +957,7 @@
             // cbTriangle
             // 
             this.cbTriangle.AutoSize = true;
-            this.cbTriangle.Location = new System.Drawing.Point(26, 184);
+            this.cbTriangle.Location = new System.Drawing.Point(26, 209);
             this.cbTriangle.Name = "cbTriangle";
             this.cbTriangle.Size = new System.Drawing.Size(169, 25);
             this.cbTriangle.TabIndex = 37;
@@ -898,7 +968,7 @@
             // cbToZero
             // 
             this.cbToZero.AutoSize = true;
-            this.cbToZero.Location = new System.Drawing.Point(26, 234);
+            this.cbToZero.Location = new System.Drawing.Point(26, 264);
             this.cbToZero.Name = "cbToZero";
             this.cbToZero.Size = new System.Drawing.Size(85, 25);
             this.cbToZero.TabIndex = 36;
@@ -909,7 +979,7 @@
             // cbTruncate
             // 
             this.cbTruncate.AutoSize = true;
-            this.cbTruncate.Location = new System.Drawing.Point(26, 291);
+            this.cbTruncate.Location = new System.Drawing.Point(26, 323);
             this.cbTruncate.Name = "cbTruncate";
             this.cbTruncate.Size = new System.Drawing.Size(94, 25);
             this.cbTruncate.TabIndex = 35;
@@ -920,6 +990,9 @@
             // tpFiltering
             // 
             this.tpFiltering.BackColor = System.Drawing.Color.DarkGray;
+            this.tpFiltering.Controls.Add(this.numMedian);
+            this.tpFiltering.Controls.Add(this.numBilateral);
+            this.tpFiltering.Controls.Add(this.numGaussian);
             this.tpFiltering.Controls.Add(this.cbMedianBlur);
             this.tpFiltering.Controls.Add(this.cbBilateralFilter);
             this.tpFiltering.Controls.Add(this.cbGaussianBlur);
@@ -967,6 +1040,11 @@
             // tpColorConversion
             // 
             this.tpColorConversion.BackColor = System.Drawing.Color.DarkGray;
+            this.tpColorConversion.Controls.Add(this.numHistogram);
+            this.tpColorConversion.Controls.Add(this.numClahe);
+            this.tpColorConversion.Controls.Add(this.numLAB);
+            this.tpColorConversion.Controls.Add(this.numGrayscale);
+            this.tpColorConversion.Controls.Add(this.numGain);
             this.tpColorConversion.Controls.Add(this.tbH2);
             this.tpColorConversion.Controls.Add(this.tbS2);
             this.tpColorConversion.Controls.Add(this.tbV2);
@@ -992,42 +1070,42 @@
             // 
             // tbH2
             // 
-            this.tbH2.Location = new System.Drawing.Point(497, 96);
+            this.tbH2.Location = new System.Drawing.Point(538, 92);
             this.tbH2.Name = "tbH2";
             this.tbH2.Size = new System.Drawing.Size(29, 29);
             this.tbH2.TabIndex = 54;
             // 
             // tbS2
             // 
-            this.tbS2.Location = new System.Drawing.Point(565, 99);
+            this.tbS2.Location = new System.Drawing.Point(606, 95);
             this.tbS2.Name = "tbS2";
             this.tbS2.Size = new System.Drawing.Size(29, 29);
             this.tbS2.TabIndex = 53;
             // 
             // tbV2
             // 
-            this.tbV2.Location = new System.Drawing.Point(629, 99);
+            this.tbV2.Location = new System.Drawing.Point(670, 95);
             this.tbV2.Name = "tbV2";
             this.tbV2.Size = new System.Drawing.Size(29, 29);
             this.tbV2.TabIndex = 52;
             // 
             // tbS
             // 
-            this.tbS.Location = new System.Drawing.Point(284, 96);
+            this.tbS.Location = new System.Drawing.Point(325, 92);
             this.tbS.Name = "tbS";
             this.tbS.Size = new System.Drawing.Size(29, 29);
             this.tbS.TabIndex = 51;
             // 
             // tbV
             // 
-            this.tbV.Location = new System.Drawing.Point(351, 96);
+            this.tbV.Location = new System.Drawing.Point(392, 92);
             this.tbV.Name = "tbV";
             this.tbV.Size = new System.Drawing.Size(29, 29);
             this.tbV.TabIndex = 50;
             // 
             // tbH
             // 
-            this.tbH.Location = new System.Drawing.Point(216, 96);
+            this.tbH.Location = new System.Drawing.Point(257, 92);
             this.tbH.Name = "tbH";
             this.tbH.Size = new System.Drawing.Size(29, 29);
             this.tbH.TabIndex = 49;
@@ -1035,7 +1113,7 @@
             // lblLower
             // 
             this.lblLower.AutoSize = true;
-            this.lblLower.Location = new System.Drawing.Point(145, 96);
+            this.lblLower.Location = new System.Drawing.Point(186, 92);
             this.lblLower.Name = "lblLower";
             this.lblLower.Size = new System.Drawing.Size(58, 21);
             this.lblLower.TabIndex = 48;
@@ -1044,7 +1122,7 @@
             // lblUpper
             // 
             this.lblUpper.AutoSize = true;
-            this.lblUpper.Location = new System.Drawing.Point(426, 99);
+            this.lblUpper.Location = new System.Drawing.Point(467, 95);
             this.lblUpper.Name = "lblUpper";
             this.lblUpper.Size = new System.Drawing.Size(57, 21);
             this.lblUpper.TabIndex = 47;
@@ -1252,6 +1330,7 @@
             this.tabControl2.Controls.Add(this.tpHoughCircle);
             this.tabControl2.Controls.Add(this.tabPage1);
             this.tabControl2.Controls.Add(this.tabPage2);
+            this.tabControl2.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tabControl2.Location = new System.Drawing.Point(1005, 630);
             this.tabControl2.Name = "tabControl2";
             this.tabControl2.SelectedIndex = 0;
@@ -1260,54 +1339,54 @@
             // 
             // tpPixelCount
             // 
+            this.tpPixelCount.BackColor = System.Drawing.Color.DarkGray;
             this.tpPixelCount.Controls.Add(this.Result);
-            this.tpPixelCount.Location = new System.Drawing.Point(4, 22);
+            this.tpPixelCount.Location = new System.Drawing.Point(4, 30);
             this.tpPixelCount.Name = "tpPixelCount";
             this.tpPixelCount.Padding = new System.Windows.Forms.Padding(3);
-            this.tpPixelCount.Size = new System.Drawing.Size(724, 368);
+            this.tpPixelCount.Size = new System.Drawing.Size(724, 360);
             this.tpPixelCount.TabIndex = 0;
             this.tpPixelCount.Text = "Pixel Count";
-            this.tpPixelCount.UseVisualStyleBackColor = true;
             // 
             // tpCountous
             // 
+            this.tpCountous.BackColor = System.Drawing.Color.DarkGray;
             this.tpCountous.Controls.Add(this.gbContour);
-            this.tpCountous.Location = new System.Drawing.Point(4, 22);
+            this.tpCountous.Location = new System.Drawing.Point(4, 30);
             this.tpCountous.Name = "tpCountous";
             this.tpCountous.Padding = new System.Windows.Forms.Padding(3);
-            this.tpCountous.Size = new System.Drawing.Size(724, 368);
+            this.tpCountous.Size = new System.Drawing.Size(724, 360);
             this.tpCountous.TabIndex = 1;
             this.tpCountous.Text = "Contours";
-            this.tpCountous.UseVisualStyleBackColor = true;
             // 
             // tpHoughCircle
             // 
+            this.tpHoughCircle.BackColor = System.Drawing.Color.DarkGray;
             this.tpHoughCircle.Controls.Add(this.gbHoughCircle);
-            this.tpHoughCircle.Location = new System.Drawing.Point(4, 22);
+            this.tpHoughCircle.Location = new System.Drawing.Point(4, 30);
             this.tpHoughCircle.Name = "tpHoughCircle";
             this.tpHoughCircle.Padding = new System.Windows.Forms.Padding(3);
-            this.tpHoughCircle.Size = new System.Drawing.Size(724, 368);
+            this.tpHoughCircle.Size = new System.Drawing.Size(724, 360);
             this.tpHoughCircle.TabIndex = 2;
             this.tpHoughCircle.Text = "Hough Circle";
-            this.tpHoughCircle.UseVisualStyleBackColor = true;
             // 
             // tabPage1
             // 
+            this.tabPage1.BackColor = System.Drawing.Color.DarkGray;
             this.tabPage1.Controls.Add(this.cbConnectedComponents);
-            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Location = new System.Drawing.Point(4, 30);
             this.tabPage1.Name = "tabPage1";
             this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage1.Size = new System.Drawing.Size(724, 368);
+            this.tabPage1.Size = new System.Drawing.Size(724, 360);
             this.tabPage1.TabIndex = 3;
             this.tabPage1.Text = "tabPage1";
-            this.tabPage1.UseVisualStyleBackColor = true;
             // 
             // cbConnectedComponents
             // 
             this.cbConnectedComponents.AutoSize = true;
             this.cbConnectedComponents.Location = new System.Drawing.Point(67, 134);
             this.cbConnectedComponents.Name = "cbConnectedComponents";
-            this.cbConnectedComponents.Size = new System.Drawing.Size(140, 17);
+            this.cbConnectedComponents.Size = new System.Drawing.Size(211, 25);
             this.cbConnectedComponents.TabIndex = 51;
             this.cbConnectedComponents.Text = "Connected Components";
             this.cbConnectedComponents.UseVisualStyleBackColor = true;
@@ -1315,25 +1394,207 @@
             // 
             // tabPage2
             // 
+            this.tabPage2.BackColor = System.Drawing.Color.DarkGray;
             this.tabPage2.Controls.Add(this.cbMinEnclosing);
-            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Location = new System.Drawing.Point(4, 30);
             this.tabPage2.Name = "tabPage2";
             this.tabPage2.Padding = new System.Windows.Forms.Padding(3);
-            this.tabPage2.Size = new System.Drawing.Size(724, 368);
+            this.tabPage2.Size = new System.Drawing.Size(724, 360);
             this.tabPage2.TabIndex = 4;
             this.tabPage2.Text = "tabPage2";
-            this.tabPage2.UseVisualStyleBackColor = true;
             // 
             // cbMinEnclosing
             // 
             this.cbMinEnclosing.AutoSize = true;
             this.cbMinEnclosing.Location = new System.Drawing.Point(188, 174);
             this.cbMinEnclosing.Name = "cbMinEnclosing";
-            this.cbMinEnclosing.Size = new System.Drawing.Size(121, 17);
+            this.cbMinEnclosing.Size = new System.Drawing.Size(185, 25);
             this.cbMinEnclosing.TabIndex = 54;
             this.cbMinEnclosing.Text = "Min Enclosing Circle";
             this.cbMinEnclosing.UseVisualStyleBackColor = true;
             this.cbMinEnclosing.CheckedChanged += new System.EventHandler(this.cbMinEnclosing_CheckedChanged);
+            // 
+            // numGain
+            // 
+            this.numGain.Location = new System.Drawing.Point(274, 34);
+            this.numGain.Name = "numGain";
+            this.numGain.Size = new System.Drawing.Size(120, 29);
+            this.numGain.TabIndex = 55;
+            // 
+            // numGrayscale
+            // 
+            this.numGrayscale.Location = new System.Drawing.Point(274, 147);
+            this.numGrayscale.Name = "numGrayscale";
+            this.numGrayscale.Size = new System.Drawing.Size(120, 29);
+            this.numGrayscale.TabIndex = 56;
+            // 
+            // numLAB
+            // 
+            this.numLAB.Location = new System.Drawing.Point(274, 211);
+            this.numLAB.Name = "numLAB";
+            this.numLAB.Size = new System.Drawing.Size(120, 29);
+            this.numLAB.TabIndex = 57;
+            // 
+            // numClahe
+            // 
+            this.numClahe.Location = new System.Drawing.Point(274, 276);
+            this.numClahe.Name = "numClahe";
+            this.numClahe.Size = new System.Drawing.Size(120, 29);
+            this.numClahe.TabIndex = 58;
+            // 
+            // numHistogram
+            // 
+            this.numHistogram.Location = new System.Drawing.Point(274, 344);
+            this.numHistogram.Name = "numHistogram";
+            this.numHistogram.Size = new System.Drawing.Size(120, 29);
+            this.numHistogram.TabIndex = 59;
+            // 
+            // numGaussian
+            // 
+            this.numGaussian.Location = new System.Drawing.Point(257, 52);
+            this.numGaussian.Name = "numGaussian";
+            this.numGaussian.Size = new System.Drawing.Size(120, 29);
+            this.numGaussian.TabIndex = 5;
+            // 
+            // numBilateral
+            // 
+            this.numBilateral.Location = new System.Drawing.Point(257, 176);
+            this.numBilateral.Name = "numBilateral";
+            this.numBilateral.Size = new System.Drawing.Size(120, 29);
+            this.numBilateral.TabIndex = 6;
+            // 
+            // numMedian
+            // 
+            this.numMedian.Location = new System.Drawing.Point(257, 113);
+            this.numMedian.Name = "numMedian";
+            this.numMedian.Size = new System.Drawing.Size(120, 29);
+            this.numMedian.TabIndex = 7;
+            // 
+            // numThreshold
+            // 
+            this.numThreshold.Location = new System.Drawing.Point(299, 32);
+            this.numThreshold.Name = "numThreshold";
+            this.numThreshold.Size = new System.Drawing.Size(120, 29);
+            this.numThreshold.TabIndex = 40;
+            // 
+            // numTriangleThreshold
+            // 
+            this.numTriangleThreshold.Location = new System.Drawing.Point(299, 205);
+            this.numTriangleThreshold.Name = "numTriangleThreshold";
+            this.numTriangleThreshold.Size = new System.Drawing.Size(120, 29);
+            this.numTriangleThreshold.TabIndex = 41;
+            // 
+            // numToZero
+            // 
+            this.numToZero.Location = new System.Drawing.Point(299, 263);
+            this.numToZero.Name = "numToZero";
+            this.numToZero.Size = new System.Drawing.Size(120, 29);
+            this.numToZero.TabIndex = 42;
+            // 
+            // numTruncate
+            // 
+            this.numTruncate.Location = new System.Drawing.Point(299, 319);
+            this.numTruncate.Name = "numTruncate";
+            this.numTruncate.Size = new System.Drawing.Size(120, 29);
+            this.numTruncate.TabIndex = 43;
+            // 
+            // numThresholdAdaptive
+            // 
+            this.numThresholdAdaptive.Location = new System.Drawing.Point(299, 144);
+            this.numThresholdAdaptive.Name = "numThresholdAdaptive";
+            this.numThresholdAdaptive.Size = new System.Drawing.Size(120, 29);
+            this.numThresholdAdaptive.TabIndex = 44;
+            // 
+            // numThresholdOtsu
+            // 
+            this.numThresholdOtsu.Location = new System.Drawing.Point(299, 88);
+            this.numThresholdOtsu.Name = "numThresholdOtsu";
+            this.numThresholdOtsu.Size = new System.Drawing.Size(120, 29);
+            this.numThresholdOtsu.TabIndex = 45;
+            // 
+            // numGradient
+            // 
+            this.numGradient.Location = new System.Drawing.Point(200, 39);
+            this.numGradient.Name = "numGradient";
+            this.numGradient.Size = new System.Drawing.Size(120, 29);
+            this.numGradient.TabIndex = 48;
+            // 
+            // numBlackHat
+            // 
+            this.numBlackHat.Location = new System.Drawing.Point(200, 151);
+            this.numBlackHat.Name = "numBlackHat";
+            this.numBlackHat.Size = new System.Drawing.Size(120, 29);
+            this.numBlackHat.TabIndex = 49;
+            // 
+            // numHitMiss
+            // 
+            this.numHitMiss.Location = new System.Drawing.Point(200, 207);
+            this.numHitMiss.Name = "numHitMiss";
+            this.numHitMiss.Size = new System.Drawing.Size(120, 29);
+            this.numHitMiss.TabIndex = 50;
+            // 
+            // numDilate
+            // 
+            this.numDilate.Location = new System.Drawing.Point(200, 268);
+            this.numDilate.Name = "numDilate";
+            this.numDilate.Size = new System.Drawing.Size(120, 29);
+            this.numDilate.TabIndex = 51;
+            // 
+            // numErode
+            // 
+            this.numErode.Location = new System.Drawing.Point(200, 329);
+            this.numErode.Name = "numErode";
+            this.numErode.Size = new System.Drawing.Size(120, 29);
+            this.numErode.TabIndex = 52;
+            // 
+            // numClose
+            // 
+            this.numClose.Location = new System.Drawing.Point(556, 99);
+            this.numClose.Name = "numClose";
+            this.numClose.Size = new System.Drawing.Size(120, 29);
+            this.numClose.TabIndex = 53;
+            // 
+            // numOpen
+            // 
+            this.numOpen.Location = new System.Drawing.Point(556, 39);
+            this.numOpen.Name = "numOpen";
+            this.numOpen.Size = new System.Drawing.Size(120, 29);
+            this.numOpen.TabIndex = 54;
+            // 
+            // numTopHat
+            // 
+            this.numTopHat.Location = new System.Drawing.Point(200, 95);
+            this.numTopHat.Name = "numTopHat";
+            this.numTopHat.Size = new System.Drawing.Size(120, 29);
+            this.numTopHat.TabIndex = 55;
+            // 
+            // numSobel
+            // 
+            this.numSobel.Location = new System.Drawing.Point(203, 49);
+            this.numSobel.Name = "numSobel";
+            this.numSobel.Size = new System.Drawing.Size(120, 29);
+            this.numSobel.TabIndex = 40;
+            // 
+            // numScharr
+            // 
+            this.numScharr.Location = new System.Drawing.Point(203, 254);
+            this.numScharr.Name = "numScharr";
+            this.numScharr.Size = new System.Drawing.Size(120, 29);
+            this.numScharr.TabIndex = 41;
+            // 
+            // numLaplacian
+            // 
+            this.numLaplacian.Location = new System.Drawing.Point(203, 187);
+            this.numLaplacian.Name = "numLaplacian";
+            this.numLaplacian.Size = new System.Drawing.Size(120, 29);
+            this.numLaplacian.TabIndex = 42;
+            // 
+            // numCanny
+            // 
+            this.numCanny.Location = new System.Drawing.Point(203, 116);
+            this.numCanny.Name = "numCanny";
+            this.numCanny.Size = new System.Drawing.Size(120, 29);
+            this.numCanny.TabIndex = 43;
             // 
             // Form1
             // 
@@ -1393,6 +1654,32 @@
             this.tabPage1.PerformLayout();
             this.tabPage2.ResumeLayout(false);
             this.tabPage2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.numGain)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numGrayscale)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLAB)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numClahe)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHistogram)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numGaussian)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBilateral)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numMedian)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numThreshold)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTriangleThreshold)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numToZero)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTruncate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numThresholdAdaptive)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numThresholdOtsu)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numGradient)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numBlackHat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numHitMiss)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numDilate)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numErode)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numClose)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numOpen)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numTopHat)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numSobel)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numScharr)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numLaplacian)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.numCanny)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1511,6 +1798,32 @@
         private System.Windows.Forms.CheckBox cbMinEnclosing;
         private System.Windows.Forms.TabPage tabPage1;
         private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.NumericUpDown numThresholdOtsu;
+        private System.Windows.Forms.NumericUpDown numThresholdAdaptive;
+        private System.Windows.Forms.NumericUpDown numTruncate;
+        private System.Windows.Forms.NumericUpDown numToZero;
+        private System.Windows.Forms.NumericUpDown numTriangleThreshold;
+        private System.Windows.Forms.NumericUpDown numThreshold;
+        private System.Windows.Forms.NumericUpDown numMedian;
+        private System.Windows.Forms.NumericUpDown numBilateral;
+        private System.Windows.Forms.NumericUpDown numGaussian;
+        private System.Windows.Forms.NumericUpDown numHistogram;
+        private System.Windows.Forms.NumericUpDown numClahe;
+        private System.Windows.Forms.NumericUpDown numLAB;
+        private System.Windows.Forms.NumericUpDown numGrayscale;
+        private System.Windows.Forms.NumericUpDown numGain;
+        private System.Windows.Forms.NumericUpDown numCanny;
+        private System.Windows.Forms.NumericUpDown numLaplacian;
+        private System.Windows.Forms.NumericUpDown numScharr;
+        private System.Windows.Forms.NumericUpDown numSobel;
+        private System.Windows.Forms.NumericUpDown numTopHat;
+        private System.Windows.Forms.NumericUpDown numOpen;
+        private System.Windows.Forms.NumericUpDown numClose;
+        private System.Windows.Forms.NumericUpDown numErode;
+        private System.Windows.Forms.NumericUpDown numDilate;
+        private System.Windows.Forms.NumericUpDown numHitMiss;
+        private System.Windows.Forms.NumericUpDown numBlackHat;
+        private System.Windows.Forms.NumericUpDown numGradient;
     }
 }
 

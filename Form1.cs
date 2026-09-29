@@ -588,11 +588,6 @@ namespace UI
             }
         }
 
-        private void button1_Click(object sender, EventArgs e)
-        {
-            Nisarga Form = new Nisarga();
-            Form.ShowDialog();
-        }
 
 
         private void cbGain_CheckedChanged(object sender, EventArgs e)
